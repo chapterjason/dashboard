@@ -1,0 +1,12 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0-DEV",
+  "main": "./dist/index.js",
+  "author": "Jason Schilling <jason@sourecode.dev>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3"
+  }
+}
