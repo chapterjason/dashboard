@@ -8,7 +8,7 @@
  */
 
 
-import { PlaneInterface } from "./PlaneInterface";
+import { PlaneInterface } from "./Plane/PlaneInterface";
 
 export interface ViewInterface extends PlaneInterface {
 

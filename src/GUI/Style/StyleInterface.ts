@@ -7,10 +7,14 @@
  * File that was distributed with this source code.
  */
 
+import {StyleValue} from "./StyleValue";
 
+export interface StyleInterface<Styles extends object = {}, Keys = keyof Styles> {
 
-export interface StyleInterface {
+    setStyle(key: Keys | string, value: StyleValue): this;
 
-    setStyle()
+    getStyle(key: Keys | string): StyleValue;
+
+    hasStyle(key: Keys | string): boolean
 
 }

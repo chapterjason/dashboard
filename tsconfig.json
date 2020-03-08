@@ -3,5 +3,8 @@
     "module": "CommonJS",
     "target": "ES2018",
     "sourceMap": true
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }

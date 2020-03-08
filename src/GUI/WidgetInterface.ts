@@ -1,5 +1,5 @@
-import { PositionAwareInterface } from "./PositionAwareInterface";
-import { PlaneInterface } from "./PlaneInterface";
+import { PositionAwareInterface } from "./Position/PositionAwareInterface";
+import { PlaneInterface } from "./Plane/PlaneInterface";
 
 export interface WidgetInterface extends PositionAwareInterface, PlaneInterface {
 
