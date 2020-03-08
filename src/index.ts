@@ -7,5 +7,12 @@
  * File that was distributed with this source code.
  */
 
-export * from "./GUI/Plane/PlaneInterface"
-export * from "./GUI/Plane/Plane"
+import { Window } from "./GUI/Window/Window";
+
+const root = document.body;
+root.style.setProperty("position", "relative");
+root.style.setProperty("font-family", "Tahoma");
+root.style.setProperty("font-size", "12px");
+
+const win = new Window("Test");
+root.appendChild(win.getElement());

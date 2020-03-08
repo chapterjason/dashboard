@@ -12,7 +12,7 @@ module.exports = {
     devtool: "inline-source-map",
     entry: "./src/index.ts",
     output: {
-        filename: "[name].[hash].js",
+        filename: "[name].js",
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js"],

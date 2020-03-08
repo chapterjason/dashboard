@@ -9,12 +9,14 @@
 
 import {StyleValue} from "./StyleValue";
 
-export interface StyleInterface<Styles extends object = {}, Keys = keyof Styles> {
+export interface StyleInterface<Keys = keyof CSSStyleDeclaration> {
 
-    setStyle(key: Keys | string, value: StyleValue): this;
+    set(key: Keys | string, value: StyleValue): this;
 
-    getStyle(key: Keys | string): StyleValue;
+    get(key: Keys | string): StyleValue;
 
-    hasStyle(key: Keys | string): boolean
+    has(key: Keys | string): boolean
+
+    delete(key: Keys | string): this;
 
 }

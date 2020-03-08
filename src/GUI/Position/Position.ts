@@ -11,9 +11,14 @@ import { PositionInterface } from "./PositionInterface";
 
 export class Position implements PositionInterface {
 
-    protected x: number = 0;
+    protected x: number;
 
-    protected y: number = 0;
+    protected y: number;
+
+    constructor(x: number = 0, y: number = 0) {
+        this.x = x;
+        this.y = y;
+    }
 
     public getX(): number {
         return this.x;
